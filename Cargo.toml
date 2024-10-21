@@ -1,0 +1,10 @@
+[package]
+name = "recipe-manager"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+askama = "0.12.1"
+fraction = { version = "0.15.3", features = ["with-serde-support"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.9"

@@ -1,0 +1,15 @@
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Unit</th>
+            <th>Note</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for ingredient in ingredients %}
+        {{ ingredient|safe }}
+        {% endfor %}
+    </tbody>
+</table>

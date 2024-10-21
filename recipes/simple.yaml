@@ -1,0 +1,47 @@
+ingredients:
+- name: vegetable stock
+  quantity:
+    !Rational
+    - Plus
+    - - 1
+      - 3
+  unit: cup
+  note: test
+  substitute:
+    name: water
+    quantity:
+      !Rational
+      - Plus
+      - - 1
+        - 3
+    unit: cup
+    note: test
+- name: soy sauce
+  quantity:
+    !Rational
+    - Plus
+    - - 1
+      - 1
+  unit: tablespoon
+- name: fish sauce
+  quantity:
+    !Rational
+    - Plus
+    - - 1
+      - 1
+  unit: tablespoon
+  substitute:
+    name: soy sauce
+    quantity:
+      !Rational
+      - Plus
+      - - 1
+        - 1
+    unit: tablespoon
+- name: brown sugar
+  quantity:
+    !Rational
+    - Plus
+    - - 3
+      - 1
+  unit: tablespoon

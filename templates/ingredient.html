@@ -1,0 +1,18 @@
+<tr>
+    <td>{{ name }}</td>
+    <td>{{ quantity }}</td>
+    <td>{{ unit }}</td>
+    {% if let Some(note) = note %}
+    <td>{{ note }}</td>
+    {% endif %}
+</tr>
+{% if let Some(substitute) = substitute %}
+<tr style="background-color: lightgray;">
+    <td>{{ substitute.name }}</td>
+    <td>{{ substitute.quantity }}</td>
+    <td>{{ substitute.unit }}</td>
+    {% if let Some(note) = substitute.note %}
+    <td>{{ note }}</td>
+    {% endif %}
+</tr>
+{% endif %}
